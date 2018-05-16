@@ -1,0 +1,40 @@
+{
+    "name": "appserver-io-psr/cli",
+    "description": "PSR, for the appserver.io CLI",
+    "homepage": "https://github.com/appserver-io-psr/cli",
+    "license": "OSL-3.0",
+    "keywords": [
+        "php",
+        "interface",
+        "cli",
+        "console"
+    ],
+    "authors": [
+        {
+            "name": "Tim Wagner",
+            "email": "tw@appserver.io",
+            "homepage": "http://www.appserver.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "appserver-io-psr/application": "~1.0"
+    },
+    "require-dev": {
+        "appserver-io/build": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "AppserverIo\\Psr\\Cli": [
+                "src/",
+                "tests/"
+            ]
+        }
+    },
+    "support": {
+        "email": "tw@appserver.io",
+        "issues": "https://github.com/appserver-io-psr/cli/issues",
+        "source": "https://github.com/appserver-io-psr/cli"
+    }
+}
