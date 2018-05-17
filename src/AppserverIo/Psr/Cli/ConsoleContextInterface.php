@@ -1,7 +1,7 @@
 <?php
 
 /**
- * \AppserverIo\Psr\Cli\ConsoleContextInterface
+ * AppserverIo\Psr\Cli\ConsoleContextInterface
  *
  * NOTICE OF LICENSE
  *

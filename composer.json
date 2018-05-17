@@ -19,7 +19,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "appserver-io-psr/application": "~1.0"
+        "appserver-io-psr/application": "~1.0",
+        "appserver-io-psr/application-server": "~1.0"
     },
     "require-dev": {
         "appserver-io/build": "~1.0"

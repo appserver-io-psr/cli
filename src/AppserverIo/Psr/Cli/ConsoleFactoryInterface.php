@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Appserver\Core\Consoles\ConsoleFactoryInterface
+ * AppserverIo\Psr\Cli\ConsoleFactoryInterface
  *
  * NOTICE OF LICENSE
  *
@@ -12,24 +12,24 @@
  * PHP version 5
  *
  * @author    Tim Wagner <tw@appserver.io>
- * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @copyright 2018 TechDivision GmbH <info@appserver.io>
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link      https://github.com/appserver-io/appserver
+ * @link      https://github.com/appserver-io-psr/cli
  * @link      http://www.appserver.io
  */
 
-namespace AppserverIo\Appserver\Core\Consoles;
+namespace AppserverIo\Psr\Cli;
 
-use AppserverIo\Appserver\Core\Api\Node\ConsoleNodeInterface;
-use AppserverIo\Appserver\Core\Interfaces\ApplicationServerInterface;
+use AppserverIo\Psr\ApplicationServer\ApplicationServerInterface;
+use AppserverIo\Psr\Cli\Configuration\ConsoleConfigurationInterface;
 
 /**
  * Factory to create new console instances.
  *
  * @author    Tim Wagner <tw@appserver.io>
- * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @copyright 2018 TechDivision GmbH <info@appserver.io>
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link      https://github.com/appserver-io/appserver
+ * @link      https://github.com/appserver-io-psr/cli
  * @link      http://www.appserver.io
  */
 interface ConsoleFactoryInterface
@@ -38,10 +38,10 @@ interface ConsoleFactoryInterface
     /**
      * Factory method to create new console instances.
      *
-     * @param \AppserverIo\Appserver\Core\Interfaces\ApplicationServerInterface $applicationServer The application server instance
-     * @param \AppserverIo\Appserver\Core\Api\Node\ConsoleNodeInterface         $consoleNode       The console configuration
+     * @param \AppserverIo\Psr\ApplicationServer\ApplicationServerInterface    $applicationServer The application server instance
+     * @param \AppserverIo\Psr\Cli\Configuration\ConsoleConfigurationInterface $consoleNode       The console configuration
      *
-     * @return \AppserverIo\Appserver\Core\Consoles\ConsoleInterface The telnet console instance
+     * @return \AppserverIo\Psr\Cli\ConsoleInterface The console instance
      */
-    public static function factory(ApplicationServerInterface $applicationServer, ConsoleNodeInterface $consoleNode);
+    public static function factory(ApplicationServerInterface $applicationServer, ConsoleConfigurationInterface $consoleNode);
 }

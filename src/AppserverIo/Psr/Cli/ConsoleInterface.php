@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Appserver\Core\Consoles\ConsoleInterface
+ * AppserverIo\Psr\Cli\ConsoleInterface
  *
  * NOTICE OF LICENSE
  *
@@ -12,21 +12,21 @@
  * PHP version 5
  *
  * @author    Tim Wagner <tw@appserver.io>
- * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @copyright 2018 TechDivision GmbH <info@appserver.io>
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link      https://github.com/appserver-io/appserver
+ * @link      https://github.com/appserver-io-psr/cli
  * @link      http://www.appserver.io
  */
 
-namespace AppserverIo\Appserver\Core\Consoles;
+namespace AppserverIo\Psr\Cli;
 
 /**
  * Interface for all console implementations.
  *
  * @author    Tim Wagner <tw@appserver.io>
- * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @copyright 2018 TechDivision GmbH <info@appserver.io>
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link      https://github.com/appserver-io/appserver
+ * @link      https://github.com/appserver-io-psr/cli
  * @link      http://www.appserver.io
  */
 interface ConsoleInterface
