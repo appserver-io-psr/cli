@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This library provides all necessary interfaces to implement a PHP base DI container.
+This library provides all necessary interfaces to implement CLI applications for appserver.io.
 
 ## Installation
 
